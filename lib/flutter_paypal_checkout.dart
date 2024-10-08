@@ -110,7 +110,7 @@ class PaypalCheckoutState extends State<PaypalCheckout> {
         body: Stack(
           children: <Widget>[
             InAppWebView(
-              initialUrlRequest: URLRequest(url: Uri.parse(checkoutUrl!)),
+              initialUrlRequest: URLRequest(url: WebUri(checkoutUrl!)),
               initialOptions: InAppWebViewGroupOptions(
                 android: AndroidInAppWebViewOptions(textZoom: 120),
               ),
